@@ -160,13 +160,15 @@
 .team-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem; /* Reduced from 3rem */
+    max-width: 900px; /* Added to make the whole section narrower */
+    margin: 0 auto;
 }
 
 .team-card {
     background: white;
     border: 1px solid var(--border);
-    border-radius: 24px;
+    border-radius: 20px; /* Reduced from 24px */
     overflow: hidden;
     transition: all 0.4s var(--transition-smooth);
 }
@@ -179,7 +181,7 @@
 
 .team-image {
     width: 100%;
-    height: 600px;
+    height: 450px; /* Reduced from 600px */
     object-fit: cover;
     object-position: center top;
     transition: transform 0.4s var(--transition-smooth);
@@ -190,27 +192,27 @@
 }
 
 .team-content {
-    padding: 2.5rem;
+    padding: 1.75rem; /* Reduced from 2.5rem */
 }
 
 .team-name {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Reduced from 2rem */
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem; /* Reduced from 0.5rem */
     color: var(--foreground);
 }
 
 .team-role {
-    font-size: 1.05rem;
+    font-size: 0.95rem; /* Reduced from 1.05rem */
     color: var(--accent);
     font-weight: 600;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem; /* Reduced from 1.25rem */
 }
 
 .team-bio {
     color: var(--muted-foreground);
-    line-height: 1.8;
-    font-size: 1.05rem;
+    line-height: 1.7; /* Reduced from 1.8 */
+    font-size: 0.95rem; /* Reduced from 1.05rem */
 }
 
 .linkedin-link {
