@@ -1,0 +1,28 @@
+{
+    "name": "impact-motion-website",
+    "version": "1.0.0",
+    "description": "Impact Motion - B2B Lead Generation Agency Website",
+    "scripts": {
+        "dev": "live-server --port=3000 --open=/ --middleware=./local-middleware.js",
+        "optimize-images": "python optimize_images.py",
+        "test": "echo 'Opening homepage for testing...' && open http://localhost:3000/",
+        "deploy": "echo 'Ready to deploy! Upload all files to your hosting provider.'",
+        "help": "echo 'Available commands: npm run dev | npm run optimize-images | npm run test | npm run deploy'"
+    },
+    "keywords": [
+        "b2b",
+        "lead-generation",
+        "marketing",
+        "sales",
+        "norway"
+    ],
+    "author": "Impact Motion <im@impact-motion.com>",
+    "license": "UNLICENSED",
+    "private": true,
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    },
+    "engines": {
+        "node": "24.x"
+    }
+}

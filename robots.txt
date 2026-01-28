@@ -1,0 +1,9 @@
+# robots.txt for Impact Motion
+# https://impact-motion.com
+
+User-agent: *
+Allow: /
+Disallow: /archive/
+
+# Sitemap location
+Sitemap: https://impact-motion.com/sitemap.xml
