@@ -1,5 +1,49 @@
 /* About Page Specific Styles */
 
+/* ===== SECTION STYLES ===== */
+.section {
+    padding: 8rem 0;
+}
+
+.section-alt {
+    background: linear-gradient(to bottom, var(--muted), var(--background));
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    display: inline-block;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--foreground);
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--muted-foreground);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
     padding: 12rem 0 8rem;
@@ -135,9 +179,9 @@
 
 .team-image {
     width: 100%;
-    height: 500px;
+    height: 600px;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center top;
     transition: transform 0.4s var(--transition-smooth);
 }
 
@@ -293,7 +337,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
     .team-image {
-        height: 400px;
+        height: 500px;
     }
 
     .team-name {
@@ -330,7 +374,7 @@
     }
 
     .team-image {
-        height: 350px;
+        height: 450px;
     }
 }
 
@@ -353,7 +397,7 @@
     }
 
     .team-image {
-        height: 300px;
+        height: 400px;
     }
 
     .team-name {
@@ -392,7 +436,7 @@
 
 @media (max-width: 480px) {
     .team-image {
-        height: 250px;
+        height: 350px;
     }
 
     .team-name {

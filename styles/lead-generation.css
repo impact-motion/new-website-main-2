@@ -1,8 +1,52 @@
 /* Lead Generation Page Specific Styles */
 
+/* ===== SECTION STYLES ===== */
+.section {
+    padding: 5rem 0;
+}
+
+.section-alt {
+    background: linear-gradient(to bottom, var(--muted), var(--background));
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    display: inline-block;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--foreground);
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--muted-foreground);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
 /* ===== HERO SECTION ===== */
 .hero {
-    padding: 12rem 0 8rem;
+    padding: 10rem 0 5rem;
     background: linear-gradient(180deg, var(--muted) 0%, var(--background) 100%);
 }
 
@@ -56,8 +100,8 @@
 .process-card {
     background: white;
     border: 1px solid var(--border);
-    border-radius: 24px;
-    padding: 3rem 2.5rem;
+    border-radius: 18px;
+    padding: 1.75rem 1.5rem;
     text-align: center;
     transition: all 0.4s var(--transition-smooth);
 }
@@ -69,8 +113,8 @@
 }
 
 .process-number {
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
     color: white;
     border-radius: 50%;
@@ -78,9 +122,9 @@
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    font-size: 1.75rem;
-    margin: 0 auto 1.5rem;
-    box-shadow: 0 8px 20px rgba(201, 102, 60, 0.3);
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+    box-shadow: 0 6px 16px rgba(201, 102, 60, 0.3);
     transition: all 0.4s var(--transition-smooth);
 }
 
@@ -90,16 +134,16 @@
 }
 
 .process-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: var(--foreground);
 }
 
 .process-card p {
     color: var(--muted-foreground);
-    line-height: 1.8;
-    font-size: 0.95rem;
+    line-height: 1.6;
+    font-size: 0.85rem;
 }
 
 /* ===== FEATURES GRID ===== */
@@ -170,16 +214,16 @@
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    max-width: 1000px;
-    margin: 4rem auto 0;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 2.5rem auto 0;
 }
 
 .pricing-card {
     background: white;
     border: 1px solid var(--border);
-    border-radius: 24px;
-    padding: 3.5rem 3rem;
+    border-radius: 18px;
+    padding: 2rem 1.75rem;
     transition: all 0.4s var(--transition-smooth);
     position: relative;
 }
@@ -203,25 +247,25 @@
     display: inline-block;
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
     color: white;
-    padding: 0.5rem 1.25rem;
+    padding: 0.35rem 1rem;
     border-radius: 999px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     box-shadow: 0 4px 12px rgba(201, 102, 60, 0.3);
 }
 
 .pricing-card h3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--foreground);
 }
 
 .pricing-card .price {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     background: linear-gradient(135deg, var(--accent), var(--accent-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -230,17 +274,17 @@
 
 .pricing-features {
     list-style: none;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .pricing-features li {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
     border-bottom: 1px solid var(--border);
     color: var(--muted-foreground);
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .pricing-features li:last-child {
@@ -248,8 +292,8 @@
 }
 
 .pricing-features svg {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     color: var(--accent);
     flex-shrink: 0;
 }
@@ -356,7 +400,7 @@
     }
 
     .section {
-        padding: 5rem 0;
+        padding: 3.5rem 0;
     }
 
     .process-grid {
