@@ -336,6 +336,29 @@
     }
 }
 
+@media (max-width: 480px) {
+    .section-press {
+        padding: 2rem 0;
+    }
+
+    .press-label {
+        font-size: 0.7rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .press-logos {
+        gap: 2rem;
+    }
+
+    .press-logo--nidaros {
+        font-size: 1.35rem;
+    }
+
+    .press-logo--e24 {
+        font-size: 1.5rem;
+    }
+}
+
 /* ===== CTA SECTION ===== */
 .cta-section {
     padding: 8rem 0;
