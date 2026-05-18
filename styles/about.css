@@ -361,13 +361,21 @@
 
 /* ===== CTA SECTION ===== */
 .cta-section {
-    padding: 8rem 0;
-    background: #ffffff;
-    color: var(--foreground);
+    min-height: 390px;
+    padding: 3rem 0;
+    background: #1a1a1a;
+    color: #ffffff;
     text-align: center;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+}
+
+.cta-section .container {
+    width: 100%;
 }
 
 .cta-section::before {
@@ -380,12 +388,12 @@
     margin-bottom: 1.25rem;
     position: relative;
     z-index: 1;
-    color: var(--foreground);
+    color: #ffffff;
 }
 
 .cta-section p {
     font-size: 1.15rem;
-    color: var(--muted-foreground);
+    color: rgba(255, 255, 255, 0.75);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     position: relative;
@@ -394,19 +402,19 @@
 }
 
 .btn-cta {
-    background: var(--foreground);
-    color: white;
+    background: #ffffff;
+    color: #1a1a1a;
     padding: 1.35rem 3rem;
     font-size: 1.05rem;
     position: relative;
     z-index: 1;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
 
 .btn-cta:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== RESPONSIVE ===== */
