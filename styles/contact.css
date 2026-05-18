@@ -3,7 +3,7 @@
 /* ===== HERO SECTION ===== */
 .hero {
     padding: 10rem 0 4rem;
-    background: linear-gradient(180deg, var(--muted) 0%, var(--background) 100%);
+    background: #ffffff;
     text-align: center;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .info-row:hover .info-icon {
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    background: var(--accent);
     transform: scale(1.05);
 }
 
@@ -177,7 +177,7 @@
 .info-icon {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, rgba(201, 102, 60, 0.1), rgba(212, 165, 116, 0.1));
+    background: rgba(160, 82, 45, 0.08);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -187,7 +187,7 @@
 }
 
 .info-card:hover .info-icon {
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    background: var(--accent);
     transform: scale(1.05);
 }
 

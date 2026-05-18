@@ -3,25 +3,13 @@
 /* ===== HERO SECTION ===== */
 .hero {
     padding: 12rem 0 8rem;
-    /* More breathing room */
-    background: linear-gradient(135deg, #fef3e7 0%, #ffe8d6 25%, #ffd6ba 50%, #ffe8d6 75%, #fef3e7 100%);
-    background-size: 400% 400%;
-    animation: gradientMove 15s ease infinite;
+    background: #ffffff;
     position: relative;
     overflow: hidden;
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(201, 102, 60, 0.05) 0%, transparent 50%);
-    animation: floatBg 20s ease-in-out infinite;
-    pointer-events: none;
-    z-index: 0;
+    content: none;
 }
 
 @keyframes gradientMove {
@@ -120,7 +108,7 @@
 }
 
 .section-alt {
-    background: linear-gradient(to bottom, var(--muted), var(--background));
+    background: #ffffff;
 }
 
 .section-header {
@@ -177,7 +165,7 @@
     position: relative;
     background: white;
     border: 1px solid var(--border);
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 3rem 2.5rem;
     transition: all 0.4s var(--transition-smooth);
     text-align: center;
@@ -190,8 +178,8 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    height: 3px;
+    background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s var(--transition-smooth);
@@ -208,10 +196,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(201, 102, 60, 0.03), rgba(212, 165, 116, 0.03));
+    background: rgba(160, 82, 45, 0.02);
     opacity: 0;
     transition: opacity 0.4s var(--transition-smooth);
-    border-radius: 24px;
+    border-radius: 16px;
 }
 
 .process-card:hover {
@@ -226,25 +214,25 @@
 
 .process-number {
     position: relative;
-    width: 72px;
-    height: 72px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    width: 56px;
+    height: 56px;
+    background: var(--accent);
     color: white;
-    border-radius: 20px;
+    border-radius: 12px;
     display: flex;
     margin: 0 auto 2rem;
     align-items: center;
     justify-content: center;
     font-weight: 800;
-    font-size: 1.75rem;
-    box-shadow: 0 8px 20px rgba(201, 102, 60, 0.3);
+    font-size: 1.4rem;
+    box-shadow: none;
     transition: all 0.4s var(--transition-smooth);
     z-index: 1;
 }
 
 .process-card:hover .process-number {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 12px 28px rgba(201, 102, 60, 0.4);
+    transform: scale(1.05);
+    box-shadow: none;
 }
 
 .process-card h3 {
@@ -276,7 +264,7 @@
 .testimonial-card {
     background: white;
     border: 1px solid var(--border);
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 2rem 1.75rem;
     text-align: left;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
@@ -313,8 +301,7 @@
 .testimonial-stars svg {
     width: 20px;
     height: 20px;
-    fill: #facc15;
-    filter: drop-shadow(0 2px 4px rgba(250, 204, 21, 0.3));
+    fill: var(--accent);
 }
 
 .testimonial-text {
@@ -341,14 +328,14 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    background: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
     font-size: 1rem;
     color: white;
-    box-shadow: 0 4px 12px rgba(201, 102, 60, 0.3);
+    flex-shrink: 0;
 }
 
 .testimonial-name {
@@ -393,9 +380,9 @@
 }
 
 .btn-mini:hover {
-    background: var(--accent);
+    background: var(--foreground);
     color: white;
-    border-color: var(--accent);
+    border-color: var(--foreground);
     transform: translateY(-2px);
 }
 
@@ -424,22 +411,16 @@
 /* ===== CTA SECTION ===== */
 .cta-section {
     padding: 8rem 0;
-    background: linear-gradient(135deg, #c9663c 0%, #d4a574 50%, #e07b4f 100%);
-    color: white;
+    background: var(--background);
+    color: var(--foreground);
     text-align: center;
     position: relative;
     overflow: hidden;
+    border-top: 1px solid var(--border);
 }
 
 .cta-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
+    content: none;
 }
 
 .cta-section h2 {
@@ -448,11 +429,12 @@
     margin-bottom: 1.25rem;
     position: relative;
     z-index: 1;
+    color: var(--foreground);
 }
 
 .cta-section p {
     font-size: 1.15rem;
-    opacity: 0.95;
+    color: var(--muted-foreground);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     position: relative;
@@ -461,12 +443,13 @@
 }
 
 .btn-cta {
-    background: white;
-    color: var(--accent);
+    background: var(--foreground);
+    color: white;
     padding: 1.35rem 3rem;
     font-size: 1.05rem;
     position: relative;
     z-index: 1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn-cta:hover {
