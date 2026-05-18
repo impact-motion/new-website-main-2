@@ -334,6 +334,23 @@
         margin: 0 auto;
     }
 
+    /* Keep combined card icons left-aligned in a vertical line */
+    .info-card--combined {
+        text-align: left;
+    }
+
+    .info-card--combined .info-row {
+        justify-content: flex-start;
+    }
+
+    .info-card--combined .info-icon {
+        margin: 0;
+    }
+
+    .info-card--combined .info-row-inline {
+        justify-content: flex-start;
+    }
+
     .calendar-wrapper iframe {
         min-height: 500px;
     }
