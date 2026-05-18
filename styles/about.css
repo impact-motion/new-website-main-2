@@ -362,7 +362,7 @@
 /* ===== CTA SECTION ===== */
 .cta-section {
     padding: 8rem 0;
-    background: var(--background);
+    background: #ffffff;
     color: var(--foreground);
     text-align: center;
     position: relative;
