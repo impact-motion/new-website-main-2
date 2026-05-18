@@ -3,7 +3,7 @@
 /* ===== HERO SECTION ===== */
 .hero {
     padding: 10rem 0 4rem;
-    background: #ffffff;
+    background: var(--background);
     text-align: center;
 }
 

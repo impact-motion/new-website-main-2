@@ -48,6 +48,39 @@
 .hero {
     padding: 10rem 0 5rem;
     background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -160px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: rgba(245, 237, 228, 0.55);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: -90px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 8px solid rgba(245, 237, 228, 0.8);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-grid {
@@ -58,9 +91,9 @@
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.25;
     letter-spacing: -0.03em;
     margin-bottom: 1.75rem;
 }
@@ -88,6 +121,107 @@
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* ===== DECORATIVE CIRCLES — sporadically placed across sections ===== */
+
+/* Process section: large outlined arc top-left + small filled circle bottom-right */
+.section-process {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-process::before {
+    content: '';
+    position: absolute;
+    top: -340px;
+    left: -200px;
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    border: 12px solid #fcf6ec;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-process::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    right: 7%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fcf6ec;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-process > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Features section: medium outlined arc top-right + small filled circle bottom-left + sparkle dots */
+.section-alt {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-alt::before {
+    content: '';
+    position: absolute;
+    top: -180px;
+    right: -110px;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 10px solid var(--background);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-alt > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Pricing section: large outlined arc bottom-left + small filled circle top-right */
+.section-pricing {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-pricing::before {
+    content: '';
+    position: absolute;
+    bottom: -280px;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 11px solid #faf3e8;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-pricing::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 14%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f5ede4;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-pricing > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* ===== PROCESS GRID ===== */
