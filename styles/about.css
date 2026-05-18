@@ -293,11 +293,11 @@
 }
 
 .press-logo {
-    color: #f5ede4;
+    color: #ffffff;
     text-decoration: none;
-    opacity: 0.8;
     transition: opacity 0.3s var(--transition-smooth);
     line-height: 1;
+    opacity: 0.95;
 }
 
 .press-logo:hover {
@@ -306,16 +306,16 @@
 
 .press-logo--nidaros {
     font-family: var(--font-serif);
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 900;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
 }
 
 .press-logo--e24 {
     font-family: var(--font-sans);
-    font-size: 2.25rem;
+    font-size: 2.35rem;
     font-weight: 900;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
 }
 
 @media (max-width: 768px) {
