@@ -112,7 +112,7 @@
 
 /* ===== DECORATIVE CIRCLES — sporadically placed across sections ===== */
 
-/* Process section: large outlined arc top-left + small filled circle bottom-right */
+/* Process section: filled blobs top-left and bottom-right (diagonal) */
 .section-process {
     position: relative;
     overflow: hidden;
@@ -122,11 +122,11 @@
     content: '';
     position: absolute;
     top: -340px;
-    left: -200px;
-    width: 540px;
-    height: 540px;
+    left: -220px;
+    width: 560px;
+    height: 560px;
     border-radius: 50%;
-    border: 12px solid #fcf6ec;
+    background: #fcf6ec;
     pointer-events: none;
     z-index: 0;
 }
@@ -134,10 +134,10 @@
 .section-process::after {
     content: '';
     position: absolute;
-    bottom: -80px;
-    right: 7%;
-    width: 200px;
-    height: 200px;
+    bottom: -340px;
+    right: -220px;
+    width: 560px;
+    height: 560px;
     border-radius: 50%;
     background: #fcf6ec;
     pointer-events: none;
@@ -589,17 +589,16 @@
 
     .section-process::before {
         top: -240px;
-        left: -140px;
-        width: 360px;
-        height: 360px;
-        border-width: 8px;
+        left: -160px;
+        width: 380px;
+        height: 380px;
     }
 
     .section-process::after {
-        bottom: -50px;
-        right: 5%;
-        width: 130px;
-        height: 130px;
+        bottom: -240px;
+        right: -160px;
+        width: 380px;
+        height: 380px;
     }
 
     .section-alt::before {
@@ -656,13 +655,14 @@
         width: 280px;
         height: 280px;
         top: -180px;
-        left: -100px;
-        border-width: 6px;
+        left: -120px;
     }
 
     .section-process::after {
-        width: 100px;
-        height: 100px;
+        width: 280px;
+        height: 280px;
+        bottom: -180px;
+        right: -120px;
     }
 
     .section-alt::before {
