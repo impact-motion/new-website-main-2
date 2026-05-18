@@ -306,12 +306,12 @@
 /* ===== CTA SECTION ===== */
 .cta-section {
     padding: 8rem 0;
-    background: var(--background);
-    color: var(--foreground);
+    background: #1a1a1a;
+    color: #f5ede4;
     text-align: center;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid var(--border);
+    border-top: none;
 }
 
 .cta-section::before {
@@ -324,12 +324,12 @@
     margin-bottom: 1.25rem;
     position: relative;
     z-index: 1;
-    color: var(--foreground);
+    color: #f5ede4;
 }
 
 .cta-section p {
     font-size: 1.15rem;
-    color: var(--muted-foreground);
+    color: rgba(245, 237, 228, 0.7);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     position: relative;
@@ -338,13 +338,13 @@
 }
 
 .btn-cta {
-    background: var(--foreground);
-    color: white;
+    background: #f5ede4;
+    color: #1a1a1a;
     padding: 1.35rem 3rem;
     font-size: 1.05rem;
     position: relative;
     z-index: 1;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
     border-radius: 8px;
 }
 
