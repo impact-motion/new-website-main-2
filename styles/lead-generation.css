@@ -366,9 +366,9 @@
 }
 
 .pricing-card.featured {
-    border-color: var(--accent);
-    box-shadow: 0 20px 60px rgba(201, 102, 60, 0.15);
-    transform: scale(1.04);
+    border: 2px solid var(--accent);
+    box-shadow: 0 20px 60px rgba(201, 102, 60, 0.18);
+    padding-top: 2.5rem;
 }
 
 .pricing-card:hover {
@@ -377,19 +377,25 @@
 }
 
 .pricing-card.featured:hover {
-    transform: scale(1.04) translateY(-6px);
+    transform: translateY(-6px);
+    box-shadow: 0 25px 70px rgba(201, 102, 60, 0.25);
 }
 
 .pricing-badge {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
     color: white;
     padding: 0.35rem 1rem;
     border-radius: 999px;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 700;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 12px rgba(201, 102, 60, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(201, 102, 60, 0.35);
 }
 
 .pricing-card h3 {
@@ -527,6 +533,13 @@
         grid-template-columns: repeat(2, 1fr);
         max-width: 700px;
         margin-top: 3rem;
+    }
+
+    .pricing-card.featured {
+        grid-column: span 2;
+        max-width: 420px;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
