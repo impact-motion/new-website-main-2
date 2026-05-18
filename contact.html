@@ -65,9 +65,12 @@
   <section class="hero">
     <div class="container">
       <h1 data-en="Get in Touch" data-no="Ta kontakt">Ta kontakt</h1>
-      <p class="hero-description" data-en="Ready to fill your calendar with qualified meetings? Let's talk."
-        data-no="Klar til å fylle kalenderen din med kvalifiserte møter? La oss snakke.">Klar til å fylle kalenderen din
-        med kvalifiserte møter? La oss snakke.</p>
+      <p class="hero-description hero-description--tight"
+        data-en="Ready to fill your calendar with qualified meetings?"
+        data-no="Klar til å fylle kalenderen din med kvalifiserte møter?">Klar til å fylle kalenderen din med
+        kvalifiserte møter?</p>
+      <p class="hero-description" data-en="We look forward to hearing from you!"
+        data-no="Vi gleder oss til å høre fra deg!">Vi gleder oss til å høre fra deg!</p>
     </div>
   </section>
 
@@ -77,11 +80,12 @@
       <div class="contact-grid">
         <!-- Contact Form -->
         <div class="contact-form-wrapper">
-          <h2 data-en="Send us a message" data-no="Send oss en melding">Send oss en melding</h2>
           <form action="https://formsubmit.co/im@impact-motion.com" method="POST" class="contact-form">
             <input type="hidden" name="_subject" value="Ny henvendelse fra Impact Motion">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
+
+            <p class="form-heading" data-en="Send us a message" data-no="Send oss en melding">Send oss en melding</p>
 
             <div class="form-group">
               <label for="name" data-en="Name" data-no="Navn">Navn</label>
@@ -108,7 +112,7 @@
                 placeholder="Fortell oss om dine behov..."></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-lg" data-en="Send Message" data-no="Send melding">
+            <button type="submit" class="btn btn-primary" data-en="Send Message" data-no="Send melding">
               Send melding
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7" />
@@ -119,55 +123,55 @@
 
         <!-- Contact Info -->
         <div class="contact-info">
-          <div class="info-card">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-            </div>
-            <div>
-              <h3 data-en="Email" data-no="E-post">E-post</h3>
-              <a href="mailto:im@impact-motion.com">im@impact-motion.com</a>
-            </div>
-          </div>
+          <div class="info-card info-card--combined">
+            <a class="info-row" href="mailto:im@impact-motion.com">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="info-row-inline">
+                <h3 data-en="Email" data-no="E-post">E-post:</h3>
+                <span class="info-row-link">im@impact-motion.com</span>
+              </div>
+            </a>
 
-          <div class="info-card">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-            </div>
-            <div>
-              <h3>LinkedIn</h3>
-              <a href="https://www.linkedin.com/company/impact-motion/" target="_blank" rel="noopener noreferrer">
-                Impact Motion
-              </a>
-            </div>
-          </div>
+            <a class="info-row" href="https://www.linkedin.com/company/impact-motion/" target="_blank"
+              rel="noopener noreferrer">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div class="info-row-inline">
+                <h3>LinkedIn:</h3>
+                <span class="info-row-link">Impact Motion</span>
+              </div>
+            </a>
 
-          <div class="info-card">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-            </div>
-            <div>
-              <h3 data-en="Book a Meeting" data-no="Book et møte">Book et møte</h3>
-              <a href="https://api.leadconnectorhq.com/widget/booking/pECTe1fz7k95BVoAEmKH" target="_blank"
-                data-en="Schedule a call" data-no="Planlegg en samtale">
-                Planlegg en samtale
-              </a>
-            </div>
+            <a class="info-row" href="https://api.leadconnectorhq.com/widget/booking/pECTe1fz7k95BVoAEmKH"
+              target="_blank" rel="noopener noreferrer">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <div class="info-row-inline">
+                <h3 data-en="Book a Meeting" data-no="Book et møte">Book et møte:</h3>
+                <span class="info-row-link" data-en="Click here to get in touch"
+                  data-no="Klikk her for å ta kontakt">Klikk her for å ta kontakt</span>
+              </div>
+            </a>
           </div>
 
           <div class="contact-image-wrapper">
-            <img src="assets/images/optimized_mac.jpg" alt="Impact Motion Workplace" class="contact-side-image">
+            <img src="assets/images/Stol.jpg" alt="Impact Motion Workplace" class="contact-side-image">
           </div>
         </div>
       </div>

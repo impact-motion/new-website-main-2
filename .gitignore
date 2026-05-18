@@ -54,3 +54,8 @@ ENV/
 *.bak
 *.backup
 *~
+
+# Stray image uploads in project root (canonical copies live in assets/images/)
+/Balkong.jpg
+/PC.jpg
+/Stol.jpg
