@@ -492,8 +492,8 @@
         padding: 5rem 0;
     }
 
-    .story-grid>div:first-child {
-        display: none;
+    .story-image-wrapper {
+        max-height: 400px;
     }
 
     .story-content {
