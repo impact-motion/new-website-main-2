@@ -107,10 +107,25 @@ function toggleMobileMenu() {
   navLinks.classList.toggle('active');
 }
 
+// Mark the current page's nav-link as active
+function highlightActiveNavLink() {
+  const path = window.location.pathname.replace(/\/$/, '') || '/';
+  document.querySelectorAll('.nav-link').forEach(link => {
+    if (link.classList.contains('nav-cta')) return;
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('http')) return;
+    const normalized = href.replace(/\/$/, '') || '/';
+    if (normalized === path) {
+      link.classList.add('active');
+    }
+  });
+}
+
 // Close mobile menu when clicking a link
 document.addEventListener('DOMContentLoaded', () => {
   renderNavigation();
   renderFooter();
+  highlightActiveNavLink();
 
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {

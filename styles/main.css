@@ -172,14 +172,26 @@ h4,
   transform: translateY(0);
 }
 
+/* Active page indicator — matches dark hover state */
+.nav-link.active {
+  color: white;
+}
+
+.nav-link.active::before {
+  opacity: 1;
+}
+
+/* Book møte — sand background with thick black border for emphasis */
 .nav-cta {
-  background: var(--foreground) !important;
-  color: white !important;
+  background: transparent !important;
+  color: var(--foreground) !important;
+  border: 2px solid var(--foreground) !important;
   border-radius: 8px !important;
+  padding: calc(0.75rem - 2px) calc(1.5rem - 2px) !important;
 }
 
 .nav-cta:hover {
-  background: #333333 !important;
+  background: var(--foreground) !important;
   color: white !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
 }
