@@ -63,6 +63,7 @@ h4,
 .hero h1 {
   font-family: var(--font-serif);
   letter-spacing: -0.02em;
+  color: var(--foreground);
 }
 
 /* ===== PREMIUM NAVBAR ===== */
