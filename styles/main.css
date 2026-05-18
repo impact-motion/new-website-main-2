@@ -1,24 +1,17 @@
 :root {
-  /* ===== DESIGN SYSTEM COLORS =====
-   * Background/sand: #f5ede4
-   * Terracotta accent: #a0522d (ONLY for labels, step numbers, ratings, badges, small accents)
-   * Black (only dark color): #1a1a1a
-   * White: #ffffff
-   * Body text: #777777
-   * Borders/dividers: #f0ece6
-   */
-  --background: #f5ede4;
+  /* Colors */
+  --background: #fef3e7;
   --foreground: #1a1a1a;
-  --muted: #ffffff;
-  --muted-foreground: #777777;
-  --border: #f0ece6;
-  --accent: #a0522d;
-  --accent-light: #a0522d;
-  --secondary: #ffffff;
+  --muted: #f5f5f5;
+  --muted-foreground: #666666;
+  --border: #e5e5e5;
+  --accent: #c9663c;
+  --accent-light: #d4a574;
+  --secondary: #f0f0f0;
 
-  /* Typography */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --font-serif: Georgia, 'Times New Roman', serif;
+  /* Typography - Updated to Raleway & Merriweather */
+  --font-sans: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
 
   /* Spacing */
   --radius: 12px;
@@ -46,15 +39,11 @@ html {
 
 body {
   font-family: var(--font-sans);
-  color: var(--muted-foreground);
+  color: var(--foreground);
   background: var(--background);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--foreground);
 }
 
 .container {
@@ -83,15 +72,15 @@ h4,
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(245, 237, 228, 0.8);
+  background: rgba(255, 250, 245, 0.8);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(232, 221, 212, 0.3);
   transition: all 0.3s var(--transition-smooth);
 }
 
 .header.scrolled {
-  background: rgba(245, 237, 228, 0.95);
+  background: rgba(255, 250, 245, 0.95);
   box-shadow: var(--shadow-sm);
 }
 
@@ -161,7 +150,7 @@ h4,
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--foreground);
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
   opacity: 0;
   transition: opacity 0.3s var(--transition-smooth);
   border-radius: 12px;
@@ -212,8 +201,8 @@ h4,
 }
 
 .lang-btn.active {
-  background: var(--foreground);
-  color: white;
+  background: white;
+  color: var(--accent);
   box-shadow: var(--shadow-sm);
 }
 
@@ -255,14 +244,14 @@ h4,
 }
 
 .btn-primary {
-  background: var(--foreground);
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
   color: white;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(201, 102, 60, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(201, 102, 60, 0.35);
 }
 
 .btn-primary:active {
@@ -278,7 +267,7 @@ h4,
 
 .btn-outline:hover {
   background: var(--secondary);
-  border-color: var(--foreground);
+  border-color: var(--accent);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }

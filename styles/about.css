@@ -141,78 +141,6 @@
     margin-top: 2rem;
 }
 
-/* ===== PRESS / FEATURED IN SECTION ===== */
-.press-section {
-    padding: 4rem 0;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-.press-label {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--muted-foreground);
-    margin-bottom: 2rem;
-}
-
-.press-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    flex-wrap: wrap;
-}
-
-.press-logo {
-    text-decoration: none;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--muted-foreground);
-    opacity: 0.7;
-    transition: all 0.3s var(--transition-smooth);
-    line-height: 1;
-}
-
-.press-logo:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-}
-
-.press-logo--e24 {
-    font-family: var(--font-sans);
-    font-size: 2.4rem;
-    color: #1a1a1a;
-    letter-spacing: -0.04em;
-}
-
-.press-logo--nidaros {
-    font-family: var(--font-serif);
-    font-size: 2rem;
-    font-style: italic;
-    color: #1a1a1a;
-}
-
-@media (max-width: 768px) {
-    .press-section {
-        padding: 3rem 0;
-    }
-
-    .press-logos {
-        gap: 2.5rem;
-    }
-
-    .press-logo--e24 {
-        font-size: 2rem;
-    }
-
-    .press-logo--nidaros {
-        font-size: 1.6rem;
-    }
-}
-
 /* ===== TEAM SECTION ===== */
 .team-grid {
     display: grid;
@@ -343,16 +271,22 @@
 /* ===== CTA SECTION ===== */
 .cta-section {
     padding: 8rem 0;
-    background: var(--background);
-    color: var(--foreground);
+    background: linear-gradient(135deg, #c9663c 0%, #d4a574 50%, #e07b4f 100%);
+    color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid var(--border);
 }
 
 .cta-section::before {
-    content: none;
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
 }
 
 .cta-section h2 {
@@ -365,7 +299,7 @@
 
 .cta-section p {
     font-size: 1.15rem;
-    color: var(--muted-foreground);
+    opacity: 0.95;
     max-width: 600px;
     margin: 0 auto 2.5rem;
     position: relative;
@@ -374,18 +308,17 @@
 }
 
 .btn-cta {
-    background: var(--foreground);
-    color: white;
+    background: white;
+    color: var(--accent);
     padding: 1.35rem 3rem;
     font-size: 1.05rem;
     position: relative;
     z-index: 1;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .btn-cta:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== RESPONSIVE ===== */
