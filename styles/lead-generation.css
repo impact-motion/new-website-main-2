@@ -538,13 +538,22 @@
 
 /* ===== CTA SECTION ===== */
 .cta-section {
-    padding: 8rem 0;
+    min-height: 495px;
+    padding: 2rem 0;
     background: #1a1a1a;
     color: #f5ede4;
     text-align: center;
     position: relative;
     overflow: hidden;
     border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-section .container {
+    width: 100%;
 }
 
 .cta-section::before {
