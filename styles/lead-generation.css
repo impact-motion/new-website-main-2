@@ -392,11 +392,19 @@
 }
 
 .pricing-custom__text {
-    font-size: 1rem;
-    color: var(--muted-foreground);
-    margin: 0;
-    line-height: 1.6;
     flex: 1;
+}
+
+.pricing-custom__text p {
+    font-size: 1.05rem;
+    color: var(--foreground);
+    margin: 0;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.pricing-custom__text p + p {
+    margin-top: 0.15rem;
 }
 
 .pricing-custom__link {
@@ -509,6 +517,22 @@
     height: 18px;
     color: var(--accent);
     flex-shrink: 0;
+}
+
+/* Not-included feature: strikethrough + light gray */
+.pricing-features li.not-included {
+    color: #bdbdbd;
+}
+
+.pricing-features li.not-included span {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #cccccc;
+}
+
+.pricing-features li.not-included svg {
+    color: #d4d4d4;
+    opacity: 0.55;
 }
 
 .full-width {
