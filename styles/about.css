@@ -428,6 +428,14 @@
     letter-spacing: 0;
 }
 
+.press-logo--aftenposten {
+    font-family: 'UnifrakturMaguntia', serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1;
+}
+
 @media (max-width: 768px) {
     .section-press {
         padding: 2.5rem 0;
@@ -451,6 +459,10 @@
 
     .press-logo--e24 .press-logo__tagline {
         font-size: 0.75rem;
+    }
+
+    .press-logo--aftenposten {
+        font-size: 1.6rem;
     }
 }
 
@@ -486,6 +498,10 @@
 
     .press-logo--e24 .press-logo__tagline {
         font-size: 0.65rem;
+    }
+
+    .press-logo--aftenposten {
+        font-size: 1.35rem;
     }
 }
 
