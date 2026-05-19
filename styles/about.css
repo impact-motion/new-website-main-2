@@ -264,6 +264,34 @@
     font-weight: 600;
 }
 
+/* ===== WORKSPACE PHOTOS ===== */
+.workspace-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.workspace-photos .story-image-wrapper {
+    height: 420px;
+}
+
+.workspace-photos .story-image {
+    height: 100%;
+    object-position: center top;
+}
+
+@media (max-width: 768px) {
+    .workspace-photos {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .workspace-photos .story-image-wrapper {
+        height: 300px;
+    }
+}
+
 /* ===== VALUES SECTION ===== */
 .values-grid {
     display: grid;
