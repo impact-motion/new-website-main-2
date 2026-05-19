@@ -178,7 +178,32 @@
 .section-pricing {
     position: relative;
     overflow: hidden;
+    background-image: radial-gradient(circle, #fcf6ec 1.8px, transparent 2px);
+    background-size: 34px 34px;
+    background-position: 0 0;
 }
+
+/* Scattered lead-gen icons in background */
+.section-pricing > .pricing-bg-icons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.pricing-bg-icon {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    color: #ebdcc5;
+    opacity: 0.55;
+}
+
+.pricing-bg-icon--1 { top: 9%;  left: 4%;  transform: rotate(-14deg); }
+.pricing-bg-icon--2 { top: 22%; right: 5%; transform: rotate(10deg); }
+.pricing-bg-icon--3 { top: 48%; left: 2%;  transform: rotate(-6deg); width: 40px; height: 40px; }
+.pricing-bg-icon--4 { top: 54%; right: 3%; transform: rotate(8deg); }
+.pricing-bg-icon--5 { top: 78%; right: 8%; transform: rotate(-18deg); width: 38px; height: 38px; }
 
 .section-pricing::before {
     content: '';
@@ -623,6 +648,20 @@
         width: 90px;
         height: 90px;
     }
+
+    .pricing-bg-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .pricing-bg-icon--3,
+    .pricing-bg-icon--5 {
+        display: none;
+    }
+
+    .section-pricing {
+        background-size: 28px 28px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -684,5 +723,19 @@
     .section-pricing::after {
         width: 70px;
         height: 70px;
+    }
+
+    .pricing-bg-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    .pricing-bg-icon--2,
+    .pricing-bg-icon--4 {
+        display: none;
+    }
+
+    .section-pricing {
+        background-size: 24px 24px;
     }
 }
