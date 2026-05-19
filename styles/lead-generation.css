@@ -359,11 +359,67 @@
 /* ===== PRICING SECTION ===== */
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.25rem;
-    max-width: 1400px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    max-width: 1100px;
     margin: 2.5rem auto 0;
     align-items: stretch;
+}
+
+.pricing-subtitle {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Custom inquiry block under cards */
+.pricing-custom {
+    margin: 3.5rem auto 0;
+    max-width: 720px;
+    padding: 1.75rem 2rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-custom__text {
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    margin: 0;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.pricing-custom__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: gap 0.3s var(--transition-smooth);
+}
+
+.pricing-custom__link:hover {
+    gap: 0.75rem;
+}
+
+.pricing-custom__link svg {
+    transition: transform 0.3s var(--transition-smooth);
+}
+
+.pricing-custom__link:hover svg {
+    transform: translateX(2px);
 }
 
 .pricing-card {
@@ -511,22 +567,6 @@
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1200px) {
-    .pricing-grid {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 900px;
-        gap: 1.5rem;
-    }
-
-    .pricing-card.featured {
-        transform: scale(1);
-    }
-
-    .pricing-card.featured:hover {
-        transform: translateY(-6px);
-    }
-}
-
 @media (max-width: 1024px) {
     .hero-grid {
         grid-template-columns: 1fr;
@@ -542,16 +582,21 @@
     }
 
     .pricing-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 700px;
+        grid-template-columns: 1fr;
+        max-width: 460px;
         margin-top: 3rem;
+        gap: 1.5rem;
     }
 
     .pricing-card.featured {
-        grid-column: span 2;
-        max-width: 420px;
         margin: 0 auto;
         width: 100%;
+    }
+
+    .pricing-custom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
     }
 }
 
@@ -602,6 +647,14 @@
 
     .pricing-card .price {
         font-size: 2rem;
+    }
+
+    .pricing-custom {
+        padding: 1.5rem;
+    }
+
+    .pricing-custom__text {
+        font-size: 0.95rem;
     }
 
     /* Scale decorative circles for tablet/mobile */
