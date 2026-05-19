@@ -11,6 +11,7 @@ function renderNavigation() {
           <nav class="nav">
             <ul class="nav-links" id="nav-links">
               <li><a href="/lead-generation" class="nav-link" data-en="Lead Generation" data-no="Leadsgenerering">Leadsgenerering</a></li>
+              <li><a href="/pristilbud" class="nav-link" data-en="Pricing" data-no="Pristilbud">Pristilbud</a></li>
               <li><a href="/about" class="nav-link" data-en="About Us" data-no="Om oss">Om oss</a></li>
               <li><a href="/contact" class="nav-link" data-en="Contact" data-no="Kontakt">Kontakt</a></li>
               <li><a href="https://api.leadconnectorhq.com/widget/booking/pECTe1fz7k95BVoAEmKH" target="_blank" class="nav-link nav-cta" data-en="Book Meeting" data-no="Book møte">Book møte</a></li>
@@ -68,6 +69,7 @@ function renderFooter() {
             <h4 data-en="Services" data-no="Tjenester">Tjenester</h4>
             <ul>
               <li><a href="/lead-generation" data-en="Lead Generation" data-no="Leadsgenerering">Leadsgenerering</a></li>
+              <li><a href="/pristilbud" data-en="Pricing" data-no="Pristilbud">Pristilbud</a></li>
               <li><a href="/about" data-en="About Us" data-no="Om oss">Om oss</a></li>
             </ul>
           </div>
