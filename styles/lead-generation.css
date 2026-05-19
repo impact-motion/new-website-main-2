@@ -392,19 +392,15 @@
 }
 
 .pricing-custom__text {
+    font-size: 1rem;
+    color: var(--foreground);
+    margin: 0;
+    line-height: 1.6;
     flex: 1;
 }
 
-.pricing-custom__text p {
-    font-size: 1.05rem;
-    color: var(--foreground);
-    margin: 0;
-    line-height: 1.5;
+.pricing-custom__bold {
     font-weight: 700;
-}
-
-.pricing-custom__text p + p {
-    margin-top: 0.15rem;
 }
 
 .pricing-custom__link {
