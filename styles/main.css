@@ -628,9 +628,38 @@ h4,
 }
 
 @media (max-width: 768px) {
+  .testimonials-marquee {
+    /* Escape container padding so marquee goes edge-to-edge */
+    margin: 0 -1.5rem;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  }
+
+  .testimonials-marquee-track {
+    gap: 1rem;
+    animation-duration: 30s;
+  }
+
   .testimonials-marquee-track .testimonial-card {
-    flex: 0 0 300px;
-    width: 300px;
+    flex: 0 0 78vw;
+    width: 78vw;
+  }
+
+  /* Keep cards left-aligned inside the marquee — saves vertical space */
+  .testimonials-marquee .testimonial-card {
+    text-align: left !important;
+    padding: 1.75rem 1.5rem !important;
+  }
+
+  .testimonials-marquee .testimonial-stars,
+  .testimonials-marquee .testimonial-author,
+  .testimonials-marquee .testimonial-business-links {
+    justify-content: flex-start !important;
+  }
+
+  .testimonials-marquee .testimonial-author {
+    flex-direction: row !important;
+    gap: 0.75rem !important;
   }
 }
 
