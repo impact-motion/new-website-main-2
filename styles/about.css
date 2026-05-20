@@ -342,8 +342,14 @@
 /* ===== PRESS / MEDIA SECTION ===== */
 .section-press {
     background: #1a1a1a;
-    padding: 3rem 0;
+    height: 280px;
+    display: flex;
+    align-items: center;
     text-align: center;
+}
+
+.section-press .container {
+    width: 100%;
 }
 
 .press-label {
@@ -441,6 +447,7 @@
 
 @media (max-width: 768px) {
     .section-press {
+        height: auto;
         padding: 2.5rem 0;
     }
 
@@ -476,6 +483,7 @@
 
 @media (max-width: 480px) {
     .section-press {
+        height: auto;
         padding: 2rem 0;
     }
 
