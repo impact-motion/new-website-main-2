@@ -70,13 +70,13 @@ function renderFooter() {
             <ul>
               <li><a href="/lead-generation" data-en="Lead Generation" data-no="Leadsgenerering">Leadsgenerering</a></li>
               <li><a href="/pristilbud" data-en="Pricing" data-no="Pristilbud">Pristilbud</a></li>
-              <li><a href="/about" data-en="About Us" data-no="Om oss">Om oss</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
             <h4 data-en="Company" data-no="Selskap">Selskap</h4>
             <ul>
+              <li><a href="/about" data-en="About Us" data-no="Om oss">Om oss</a></li>
               <li><a href="/contact" data-en="Contact" data-no="Kontakt">Kontakt</a></li>
               <li><a href="https://api.leadconnectorhq.com/widget/booking/pECTe1fz7k95BVoAEmKH" target="_blank" data-en="Booking" data-no="Booking">Booking</a></li>
             </ul>
