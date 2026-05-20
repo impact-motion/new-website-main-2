@@ -40,21 +40,22 @@ function setLanguage(lang) {
     document.documentElement.lang = lang === 'no' ? 'no' : 'en';
 }
 
-// Load saved language
+// Load saved language + init marquee
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'no';
     setLanguage(savedLang);
+    initMarquee();
 });
 
-// Testimonials carousel
-function moveCarousel(trackId, dir) {
-  const track = document.getElementById(trackId);
-  if (!track) return;
-  const card = track.querySelector('.testimonial-card');
-  if (!card) return;
-  const gap = parseFloat(getComputedStyle(track).gap) || 32;
-  const cardWidth = card.getBoundingClientRect().width + gap;
-  track.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+// Testimonials auto-scroll marquee — duplicate cards for seamless infinite loop
+function initMarquee() {
+  document.querySelectorAll('.testimonials-marquee-track').forEach(track => {
+    Array.from(track.children).forEach(card => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  });
 }
 
 // Smooth scroll

@@ -583,57 +583,33 @@ h4,
   }
 }
 
-/* ===== TESTIMONIALS CAROUSEL ===== */
-.testimonials-carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.testimonials-track {
-  display: flex;
-  gap: 2rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  flex: 1;
+/* ===== TESTIMONIALS MARQUEE (auto-scroll) ===== */
+.testimonials-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
   padding: 0.5rem 0 1.5rem;
 }
 
-.testimonials-track::-webkit-scrollbar {
-  display: none;
-}
-
-.testimonials-track .testimonial-card {
-  flex: 0 0 calc((100% - 4rem) / 3);
-  scroll-snap-align: start;
-}
-
-.carousel-btn {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1.5px solid var(--border);
-  background: white;
-  color: var(--foreground);
+.testimonials-marquee-track {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s var(--transition-smooth);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  gap: 1.5rem;
+  width: max-content;
+  animation: testimonials-scroll 40s linear infinite;
 }
 
-.carousel-btn:hover {
-  background: var(--foreground);
-  color: white;
-  border-color: var(--foreground);
-  transform: scale(1.08);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+.testimonials-marquee:hover .testimonials-marquee-track {
+  animation-play-state: paused;
+}
+
+.testimonials-marquee-track .testimonial-card {
+  flex: 0 0 420px;
+  width: 420px;
+}
+
+@keyframes testimonials-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .testimonial-link {
@@ -651,19 +627,10 @@ h4,
   gap: 0.75rem;
 }
 
-@media (max-width: 900px) {
-  .testimonials-track .testimonial-card {
-    flex: 0 0 calc((100% - 2rem) / 2);
-  }
-}
-
-@media (max-width: 580px) {
-  .testimonials-track .testimonial-card {
-    flex: 0 0 85%;
-  }
-
-  .carousel-btn {
-    display: none;
+@media (max-width: 768px) {
+  .testimonials-marquee-track .testimonial-card {
+    flex: 0 0 300px;
+    width: 300px;
   }
 }
 
