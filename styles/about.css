@@ -420,6 +420,25 @@
     line-height: 1;
 }
 
+.press-logo--nrk {
+    font-family: var(--font-sans);
+    display: inline-flex;
+    align-items: baseline;
+    line-height: 1;
+}
+
+.press-logo--nrk .press-logo__nrk-mark {
+    font-size: 2.35rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.press-logo--nrk .press-logo__nrk-sub {
+    font-size: 2.35rem;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
 @media (max-width: 768px) {
     .section-press {
         padding: 2.5rem 0;
@@ -447,6 +466,11 @@
 
     .press-logo--aftenposten {
         font-size: 1.6rem;
+    }
+
+    .press-logo--nrk .press-logo__nrk-mark,
+    .press-logo--nrk .press-logo__nrk-sub {
+        font-size: 1.85rem;
     }
 }
 
@@ -486,6 +510,11 @@
 
     .press-logo--aftenposten {
         font-size: 1.35rem;
+    }
+
+    .press-logo--nrk .press-logo__nrk-mark,
+    .press-logo--nrk .press-logo__nrk-sub {
+        font-size: 1.55rem;
     }
 }
 
