@@ -46,6 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
     setLanguage(savedLang);
 });
 
+// Testimonials carousel
+function moveCarousel(trackId, dir) {
+  const track = document.getElementById(trackId);
+  if (!track) return;
+  const card = track.querySelector('.testimonial-card');
+  if (!card) return;
+  const gap = parseFloat(getComputedStyle(track).gap) || 32;
+  const cardWidth = card.getBoundingClientRect().width + gap;
+  track.scrollBy({ left: dir * cardWidth, behavior: 'smooth' });
+}
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

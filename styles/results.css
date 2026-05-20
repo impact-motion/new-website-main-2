@@ -147,11 +147,7 @@
 }
 
 /* ===== TESTIMONIALS ===== */
-.testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; /* Reduced from 3rem to fit three reviews better */
-}
+/* Carousel styles are in main.css */
 
 .testimonial-card {
     background: white;
@@ -297,12 +293,6 @@
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 1200px) {
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
 
 @media (max-width: 1024px) {
     .stats-grid {
@@ -313,9 +303,6 @@
         grid-template-columns: 1fr;
     }
 
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 768px) {
