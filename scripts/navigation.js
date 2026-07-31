@@ -14,7 +14,7 @@ function renderNavigation() {
               <li><a href="/pristilbud" class="nav-link" data-en="Packages" data-no="Pakketilbud">Pakketilbud</a></li>
               <li><a href="/about" class="nav-link" data-en="About Us" data-no="Om oss">Om oss</a></li>
               <li><a href="/contact" class="nav-link" data-en="Contact" data-no="Kontakt">Kontakt</a></li>
-              <li><a href="https://api.leadconnectorhq.com/widget/booking/pECTe1fz7k95BVoAEmKH" target="_blank" class="nav-link nav-cta" data-en="Book Meeting" data-no="Book møte">Book møte</a></li>
+              <li><a href="https://calendly.com/im-impact-motion/30min" target="_blank" class="nav-link nav-cta" data-en="Book Meeting" data-no="Book møte">Book møte</a></li>
               <li class="mobile-lang-toggle">
                 <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
                 <button class="lang-btn active" data-lang="no" onclick="setLanguage('no')">NO</button>
@@ -78,7 +78,7 @@ function renderFooter() {
             <ul>
               <li><a href="/about" data-en="About Us" data-no="Om oss">Om oss</a></li>
               <li><a href="/contact" data-en="Contact" data-no="Kontakt">Kontakt</a></li>
-              <li><a href="https://api.leadconnectorhq.com/widget/booking/pECTe1fz7k95BVoAEmKH" target="_blank" data-en="Booking" data-no="Booking">Booking</a></li>
+              <li><a href="https://calendly.com/im-impact-motion/30min" target="_blank" data-en="Booking" data-no="Booking">Booking</a></li>
             </ul>
           </div>
 
