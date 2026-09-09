@@ -85,6 +85,10 @@
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
 
+            <!-- Honeypot: usynlig for mennesker. Bots fyller den ut, og FormSubmit forkaster innsendingen. -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"
+              aria-hidden="true">
+
             <p class="form-heading" data-en="Send us a message" data-no="Send oss en melding">Send oss en melding</p>
 
             <div class="form-group">
