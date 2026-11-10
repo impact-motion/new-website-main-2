@@ -602,6 +602,69 @@ h4,
   animation-play-state: paused;
 }
 
+/* When JS drives the marquee, it handles scrolling itself */
+.testimonials-marquee-track.is-js {
+  animation: none;
+  will-change: transform;
+}
+
+.testimonials-marquee:has(.is-js) {
+  touch-action: pan-y;
+}
+
+.testimonials-carousel {
+  position: relative;
+}
+
+.testimonials-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  color: var(--accent);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%) scale(0.9);
+  transition: opacity 0.2s var(--transition-smooth), transform 0.2s var(--transition-smooth),
+    background 0.2s var(--transition-smooth), color 0.2s var(--transition-smooth);
+}
+
+.testimonials-nav-prev { left: 0.5rem; }
+.testimonials-nav-next { right: 0.5rem; }
+
+.testimonials-carousel:hover .testimonials-nav,
+.testimonials-carousel:has(:focus-visible) .testimonials-nav {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) scale(1);
+}
+
+.testimonials-nav:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.testimonials-nav:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* No hover on touch screens: swiping is used instead */
+@media (hover: none) {
+  .testimonials-nav {
+    display: none;
+  }
+}
+
 .testimonials-marquee-track .testimonial-card {
   flex: 0 0 420px;
   width: 420px;
